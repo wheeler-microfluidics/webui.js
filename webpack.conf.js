@@ -1,6 +1,6 @@
 module.exports = {
   target: 'web',
-  entry: './test/libDeviceUIPlugin.js',
+  entry: './src/libDeviceUIPlugin.js',
   output: {
     filename: './index.js',
     libraryTarget: 'umd'

@@ -23,8 +23,8 @@ global.PhosphorMenus = require('phosphor-menus');
 global.PhosphorWidget =require('phosphor-widget');
 
 global.THREELine2d = {}
-global.THREELine2d.Line = require('../three-line-2d')(THREE);
-global.THREELine2d.BasicShader = require('../shaders/basic')(THREE);
+global.THREELine2d.Line = require('../lib/three-line-2d')(THREE);
+global.THREELine2d.BasicShader = require('../lib/shaders/basic')(THREE);
 global.THREELine2d.DashShader = require('./shader-dash')(THREE);
 global.THREELine2d.GradientShader = require('./shader-gradient')(THREE);
 
@@ -45,12 +45,12 @@ global.Stats = require("stats-js");
 global.DockPanel = require('phosphor-dockpanel').DockPanel;
 
 global.MouseEventHandler =
-    require("../ThreeHelpers.MouseEventHandler.js")(THREE);
+    require("../lib/ThreeHelpers.MouseEventHandler.js")(THREE);
 global.ThreeHelpers =
-    require("../ThreeHelpers.SvgPathsGroup.js")(THREE);
-global.ZmqPlugin = require("../zmq-plugin.js");
-global.ControlPointsUI = require("../d3.controlPoints.js");
-global.PerspectiveTransform = require("../PerspectiveTransform.js");
-global.PlaneTransform = require("../planeTransform.js")(THREE);
-global.DataFrame = require("../pandas-helpers.js").DataFrame;
-global.Widgets = require("../widgets.js")(THREE);
+    require("../lib/ThreeHelpers.SvgPathsGroup.js")(THREE);
+global.ZmqPlugin = require("../lib/zmq-plugin.js");
+global.ControlPointsUI = require("../lib/d3.controlPoints.js");
+global.PerspectiveTransform = require("../lib/PerspectiveTransform.js");
+global.PlaneTransform = require("../lib/planeTransform.js")(THREE);
+global.DataFrame = require("../lib/pandas-helpers.js").DataFrame;
+global.Widgets = require("../lib/widgets.js")(THREE);
