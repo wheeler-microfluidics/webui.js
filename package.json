@@ -1,13 +1,13 @@
 {
-  "name": "three-line-2d",
-  "version": "1.1.6",
-  "description": "lines expanded in a vertex shader",
+  "name": "webui.js",
+  "version": "0.1.0",
+  "description": "MicroDrop web browser UI support library",
   "main": "index.js",
   "license": "MIT",
   "author": {
-    "name": "Matt DesLauriers",
-    "email": "dave.des@gmail.com",
-    "url": "https://github.com/mattdesl"
+    "name": "Christian Fobel",
+    "email": "christian@fobel.net",
+    "url": "https://github.com/wheeler-microfluidics"
   },
   "semistandard": {
     "globals": [
@@ -79,30 +79,17 @@
     "webpack": "^1.13.3"
   },
   "scripts": {
-    "build": "browserify test/libDeviceUIPlugin.js -o libDeviceUIPlugin.js",
-    "start": "budo test/index.js:bundle.js --live",
-    "test": "semistandard"
+    "build": "webpack --config webpack.conf.js"
   },
   "keywords": [
-    "three",
-    "js",
-    "line",
-    "render",
-    "2d",
-    "join",
-    "miter",
-    "thick",
-    "gl.LINES",
-    "lines",
-    "gl",
-    "polyline"
+    "microdrop"
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/mattdesl/three-line-2d.git"
+    "url": "git://github.com/wheeler-microfluidics/webui.js"
   },
-  "homepage": "https://github.com/mattdesl/three-line-2d",
+  "homepage": "https://github.com/wheeler-microfluidics/webui.js",
   "bugs": {
-    "url": "https://github.com/mattdesl/three-line-2d/issues"
+    "url": "https://github.com/wheeler-microfluidics/webui.js/issues"
   }
 }

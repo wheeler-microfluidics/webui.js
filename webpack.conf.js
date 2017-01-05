@@ -2,7 +2,7 @@ module.exports = {
   target: 'web',
   entry: './test/libDeviceUIPlugin.js',
   output: {
-    filename: './libDeviceUIPlugin.js',
+    filename: './index.js',
     libraryTarget: 'umd'
   },
   resolve: {

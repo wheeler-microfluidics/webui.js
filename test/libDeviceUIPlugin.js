@@ -23,7 +23,7 @@ global.PhosphorMenus = require('phosphor-menus');
 global.PhosphorWidget =require('phosphor-widget');
 
 global.THREELine2d = {}
-global.THREELine2d.Line = require('../')(THREE);
+global.THREELine2d.Line = require('../three-line-2d')(THREE);
 global.THREELine2d.BasicShader = require('../shaders/basic')(THREE);
 global.THREELine2d.DashShader = require('./shader-dash')(THREE);
 global.THREELine2d.GradientShader = require('./shader-gradient')(THREE);
